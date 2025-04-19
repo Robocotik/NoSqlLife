@@ -4,6 +4,7 @@
 ### NextJS ###
 # dependencies
 /.next
+/nosqllife/.next
 /node_modules
 /.pnp
 .pnp.js

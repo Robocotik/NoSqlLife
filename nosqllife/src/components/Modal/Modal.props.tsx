@@ -1,6 +1,5 @@
 import type { HTMLAttributes } from 'react';
 
 export default interface Props extends HTMLAttributes<HTMLDivElement>{
-    image?: string;
-    innerClassname?: string;
+    
 }

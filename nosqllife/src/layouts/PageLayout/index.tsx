@@ -1,7 +1,7 @@
 import type {FC} from 'react';
 import type Props from './PageLayout.props';
 
-export const PageLayout: FC<Props> = ({children, className, image}) => {
+export const PageLayout: FC<Props> = ({children, innerClassname, className, image}) => {
   return (
     <div className={`w-full min-h-dvh px-inline-main relative mx-auto ${className}`}>
       {image && (
@@ -11,7 +11,7 @@ export const PageLayout: FC<Props> = ({children, className, image}) => {
           className='absolute inset-0 w-full h-full object-cover z-0 object-center filter blur-md'
         />
       )}
-      <div className='relative z-10 w-full h-full '>{children}</div>
+      <div className={`relative z-10 w-full h-full ${innerClassname}`}>{children}</div>
     </div>
   );
 };

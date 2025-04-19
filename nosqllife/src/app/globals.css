@@ -8,7 +8,28 @@
 @theme {
   --padding-inline-main: 10rem;
   --color-main_green: #82fe49;
+  --animate-appear-top-300: appear-top 0.3s ease-out;
+  --animate-appear-opacity-400: appear-opacity 0.4s ease-out;
 }
+
+@keyframes appear-top {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes appear-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
 
 @theme inline {
   --color-background: var(--background);

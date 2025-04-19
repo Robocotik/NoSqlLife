@@ -17,7 +17,7 @@ interface FormValues {
   organization: boolean;
 }
 
-export default function Login() {
+export default function Registrate() {
   const formik = useFormik({
     initialValues: {
       email: '',
