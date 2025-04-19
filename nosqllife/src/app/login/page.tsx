@@ -1,6 +1,6 @@
 'use client';
-import {PageLayout} from '../../../layouts/PageLayout';
-import {PrimaryButton} from '../../../components/PrimaryButton';
+import { PageLayout } from '@/layouts/PageLayout';
+import { PrimaryButton } from '@/components/PrimaryButton';
 import reg_img from '@/assets/img/bg_reg.jpg';
 import * as yup from 'yup'; // Импортируем yup
 import {useFormik} from 'formik'; // Импортируем useFormik из formik
