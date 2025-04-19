@@ -4,6 +4,7 @@ export interface dataBit {
     onClick: () => void;
     label: string;
 } 
-export default interface Props extends HTMLAttributes<HTMLDivElement>{
-    data: dataBit[];
+export default interface Props extends HTMLAttributes<HTMLDivElement> {
+  data: dataBit[];
+  onItemClick?: (item: dataBit) => void;
 }
