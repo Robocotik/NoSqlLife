@@ -21,3 +21,15 @@ def get_user_by_email(
     if not db_user:
         raise HTTPException(status_code=404, detail="User not found")
     return db_user
+
+@router.get("/count/", response_model=int)
+def get_users_count(
+    db: Session = Depends(get_db)
+):
+    return crud.get_count_users(db)
+
+@router.get("/connections/", response_model=int)
+def get_users_count(
+    db: Session = Depends(get_db)
+):
+    return crud.get_db_connections_count(db)
