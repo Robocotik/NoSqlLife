@@ -46,7 +46,7 @@ const HeaderLayout = ({ head, lhs, rhs, trailer, className, ...props })=>{
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/logo.0b8cc7af.svg");}}),
+__turbopack_context__.v("/_next/static/media/logo.77081aaf.svg");}}),
 "[project]/src/assets/icons/logo.svg.mjs { IMAGE => \"[project]/src/assets/icons/logo.svg (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -100,7 +100,7 @@ const Logo = ({ className, onClick, ...props })=>{
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/support.fb7b1d70.svg");}}),
+__turbopack_context__.v("/_next/static/media/support.39ff3eb8.svg");}}),
 "[project]/src/assets/icons/support.svg.mjs { IMAGE => \"[project]/src/assets/icons/support.svg (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -153,7 +153,7 @@ const Support = ({ className, ...props })=>{
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/tg.b0476a18.svg");}}),
+__turbopack_context__.v("/_next/static/media/tg.81e2c60f.svg");}}),
 "[project]/src/assets/icons/tg.svg.mjs { IMAGE => \"[project]/src/assets/icons/tg.svg (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
@@ -206,7 +206,7 @@ const TelegramIcon = ({ className, ...props })=>{
 
 var { g: global, __dirname } = __turbopack_context__;
 {
-__turbopack_context__.v("/_next/static/media/lks.e1772c9e.svg");}}),
+__turbopack_context__.v("/_next/static/media/lks.1aa61ecf.svg");}}),
 "[project]/src/assets/icons/lks.svg.mjs { IMAGE => \"[project]/src/assets/icons/lks.svg (static in ecmascript)\" } [app-ssr] (structured image object, ecmascript)": ((__turbopack_context__) => {
 "use strict";
 
