@@ -22,4 +22,5 @@ class UserOut(UserBase):
 class Token(BaseModel):
     token: str
 class User(BaseModel):
-    user: str
+    id: int
+    email: str
