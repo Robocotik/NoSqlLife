@@ -1,14 +1,20 @@
 import {useState, useEffect, type FC} from 'react';
 import type Props from './DropDown.props';
-export const DropDown: FC<Props> = ({data, className}) => {
+import type { dataBit } from './DropDown.props';
+export const DropDown: FC<Props> = ({data, className, onItemClick}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string | null>(null); // Состояние для хранения выбранного элемента
   const toggleMenu = () => {
     setIsOpen(prev => !prev);
   };
-  const handleItemClick = (item: {label: string; onClick: () => void}) => {
+  const handleItemClick = (item: dataBit) => {
     setSelectedItem(item.label); // Обновляем состояние выбранного элемента
-    item.onClick(); // Вызываем функцию onClick, если она есть
+    if (onItemClick) {
+      onItemClick(item); // Вызываем переданный обработчик, если он есть
+    }
+    if (item.onClick) {
+      item.onClick(); // Вызываем функцию onClick, если она есть
+    }
     setIsOpen(false); // Закрываем меню после выбора
   };
   // Обработчик клика вне выпадающего списка
@@ -29,8 +35,6 @@ export const DropDown: FC<Props> = ({data, className}) => {
   }, [isOpen]);
   return (
     <div className='relative inline-block text-left dropdown-container'>
-      {' '}
-      {/* Добавляем класс для контейнера */}
       <button
         type='button'
         className={`${className} hover:opacity-70 duration-200 transition-opacity inline-flex w-full justify-center gap-x-1.5
