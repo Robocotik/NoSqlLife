@@ -3,7 +3,7 @@ import type Props from './PageLayout.props';
 
 export const PageLayout: FC<Props> = ({children, className, image}) => {
   return (
-    <div className={`w-dvw min-h-dvh px-inline-main mx-auto ${className}`}>
+    <div className={`w-full min-h-dvh px-inline-main mx-auto ${className}`}>
       {image && (
         <img
           src={image}

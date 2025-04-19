@@ -1,13 +1,13 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme{
-   --padding-inline-main: 20rem;
-   --color-main_green: #82FE49;
+@theme {
+  --padding-inline-main: 10rem;
+  --color-main_green: #82fe49;
 }
 
 @theme inline {

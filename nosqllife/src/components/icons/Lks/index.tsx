@@ -1,0 +1,17 @@
+import {type FC} from 'react';
+import Image from 'next/image';
+import Props from './Lks.props';
+import src from '@/assets/icons/lks.svg';
+
+export const Lks: FC<Props> = ({className, ...props}) => {
+  return (
+    <Image
+      src={src}
+      className={` hover:opacity-80 w-fit h-full duration-200 transition-all ${className}`}
+      {...props}
+      alt='Lks'
+      width={29}
+      height={30}
+    />
+  );
+};
