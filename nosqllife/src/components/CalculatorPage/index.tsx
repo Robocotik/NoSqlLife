@@ -1,6 +1,7 @@
 'use client';
 import {FC, useState, useEffect} from 'react';
-import type Props from './CalculatorPage.props';
+// import type Props from './CalculatorPage.props';
+import { Props } from './CalculatorPage.props';
 import {PageLayout} from '@/layouts/PageLayout';
 import {DropDown} from '../DropDown';
 import {data} from './CalculatorPage.usecase';

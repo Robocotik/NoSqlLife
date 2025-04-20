@@ -1,6 +1,7 @@
 import {type FC} from 'react';
 import Image from 'next/image';
-import Props from './HandsIcon.props';
+// import Props from './HandsIcon.props';
+import { Props } from './HandsIcon.props';
 import src from '@/assets/icons/hands.svg';
 
 export const HandsIcon: FC<Props> = ({className, ...props}) => {

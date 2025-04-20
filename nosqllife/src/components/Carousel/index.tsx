@@ -31,7 +31,7 @@ const EmblaCarousel: React.FC<PropType> = props => {
   const {slides, options} = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
   const [scrollProgress, setScrollProgress] = useState(0);
-
+  slides[0]=1;
   const {prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick} =
     usePrevNextButtons(emblaApi);
 

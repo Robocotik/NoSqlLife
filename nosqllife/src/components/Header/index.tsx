@@ -11,9 +11,10 @@ export const Header: FC<Props> = ({className, ...props}) => {
   const router = useRouter();
   return (
     <HeaderLayout
+      className={className}
       head={<Logo onClick={() => router.push('/')} />}
       lhs={<Support onClick={() => router.push('')} />}
-      rhs={<TelegramIcon onClick={() => router.push('https://t.me/+gHz_nFWr_lxkNjIy')} />}
+      rhs={<TelegramIcon onClick={() => router.push('https://t.me/ItViezdBot')} />}
       trailer={<Lks className='max-h-14' onClick={() => router.push('/profile')} />}
       {...props}
     />

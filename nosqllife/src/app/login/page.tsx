@@ -27,7 +27,8 @@ export default function Login() {
       organization: false,
     },
     validationSchema: validationSchema,
-    onSubmit: (values: FormValues) => {
+    onSubmit: () => {
+      
       router.push('/');
     },
   });

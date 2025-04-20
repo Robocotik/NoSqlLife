@@ -1,7 +1,8 @@
 'use client';
 
 import type {FC} from 'react';
-import Props from './AboutPage.props';
+// import Props from './AboutPage.props';
+import { Props } from './AboutPage.props';
 import {PageLayout} from '@/layouts/PageLayout';
 import src from '@/assets/img/main_main.jpg';
 export const AboutPage: FC<Props> = ({className}) => {

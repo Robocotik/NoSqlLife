@@ -1,5 +1,4 @@
 'use client'
-import {PageLayout} from '@/layouts/PageLayout';
 import {Header} from '@/components/Header';
 import {CalculatorPage} from '@/components/CalculatorPage';
 import { AboutPage } from '@/components/AboutPage';
