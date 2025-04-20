@@ -49,7 +49,7 @@ export const CalculatorPage: FC<Props> = ({className, ...props}) => {
           <p className='mx-auto font-bold text-3xl text-white'>Рассчет стоимости</p>
           <div className='flex gap-4 items-center text-black'>
             <HandsIcon className='w-12' />
-            <DropDown data={data} onItemClick={handleItemClick} />{' '}
+            <DropDown data={data} defaultValue={"Класс 1"} onItemClick={handleItemClick} />{' '}
             {/* Передаем обработчик выбора */}
           </div>
           <div className='flex gap-4 items-center text-black'>

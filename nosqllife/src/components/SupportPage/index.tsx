@@ -7,7 +7,7 @@ import Modal from '@/components/Modal';
 import EmblaCarousel from '../Carousel';
 import type {EmblaOptionsType} from 'embla-carousel';
 export const SupportPage = () => {
-  const OPTIONS: EmblaOptionsType = {dragFree: true};
+  const OPTIONS: EmblaOptionsType = {dragFree: false};
   const SLIDE_COUNT = 5;
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys());
   return (
@@ -16,7 +16,7 @@ export const SupportPage = () => {
         <BigDropDown label='Пошаговая инструкиця по настройке  электронной подписи '>
           <div className='flex flex-col gap-4'>
             <Modal className='' buttonTitle={'Инструкиця по настройке  электронной подписи'}>
-              <div className='flex flex-col h-full w-full'>
+              <div className='flex flex-col h-full w-full '>
                 <EmblaCarousel slides={SLIDES} options={OPTIONS} />
               </div>
             </Modal>

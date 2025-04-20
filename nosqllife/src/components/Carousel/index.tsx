@@ -3,6 +3,24 @@ import {EmblaCarouselType, EmblaOptionsType} from 'embla-carousel';
 import useEmblaCarousel from 'embla-carousel-react';
 import {NextButton, PrevButton, usePrevNextButtons} from './CarouselArrows';
 import './index.css';
+import Image from 'next/image';
+import photo1 from '@/assets/img/photo_1.png';
+import photo2 from '@/assets/img/photo2.png';
+import photo3 from '@/assets/img/photo3.png';
+import photo4 from '@/assets/img/photo4.png';
+import photo5 from '@/assets/img/photo5.png';
+import photo6 from '@/assets/img/photo6.png';
+import photo7 from '@/assets/img/photo7.png';
+
+const photoes = [
+  photo1.src,
+  photo2.src,
+  photo3.src,
+  photo4.src,
+  photo5.src,
+  photo6.src,
+  photo7.src,
+];
 
 type PropType = {
   slides: number[];
@@ -33,11 +51,15 @@ const EmblaCarousel: React.FC<PropType> = props => {
     <div className='embla'>
       <div className='embla__viewport' ref={emblaRef}>
         <div className='embla__container'>
-          {slides.map(index => (
+          {photoes.map((item, index) => (
             <div className='embla__slide' key={index}>
-              <div className='embla__slide__number'>
-                <span>{index + 1}</span>
-              </div>
+              <Image
+                src={item}
+                alt='ph1'
+                className='w-full h-full object-contain object-center overflow-hidden'
+                width={400}
+                height={400}
+              />
             </div>
           ))}
         </div>

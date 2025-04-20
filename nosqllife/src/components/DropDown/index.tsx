@@ -1,7 +1,7 @@
 import {useState, useEffect, type FC} from 'react';
 import type Props from './DropDown.props';
 import type { dataBit } from './DropDown.props';
-export const DropDown: FC<Props> = ({data, className, onItemClick}) => {
+export const DropDown: FC<Props> = ({data,defaultValue, className, onItemClick}) => {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedItem, setSelectedItem] = useState<string | null>(null); // Состояние для хранения выбранного элемента
   const toggleMenu = () => {
@@ -44,7 +44,7 @@ export const DropDown: FC<Props> = ({data, className, onItemClick}) => {
         onClick={toggleMenu}
         aria-expanded={isOpen}
         aria-haspopup='true'>
-        {selectedItem || 'Класс 1'} {/* Отображаем выбранный элемент или текст по умолчанию */}
+        {selectedItem || defaultValue} {/* Отображаем выбранный элемент или текст по умолчанию */}
         <svg
           className='-mr-1 size-5 text-gray-400'
           viewBox='0 0 20 20'
