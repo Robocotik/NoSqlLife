@@ -4,6 +4,7 @@ import {PrimaryButton} from '@/components/PrimaryButton';
 import reg_img from '@/assets/img/bg_reg.jpg';
 import * as yup from 'yup'; // Импортируем yup
 import {useFormik} from 'formik'; // Импортируем useFormik из formik
+import { useRouter } from 'next/navigation';
 const validationSchema = yup.object().shape({
   email: yup.string().email('Неверный формат email').required('Email обязателен'),
   password: yup
@@ -18,6 +19,7 @@ interface FormValues {
 }
 
 export default function Login() {
+  const router = useRouter();
   const formik = useFormik({
     initialValues: {
       email: '',
@@ -26,7 +28,7 @@ export default function Login() {
     },
     validationSchema: validationSchema,
     onSubmit: (values: FormValues) => {
-      console.log(values);
+      router.push('/');
     },
   });
   return (
@@ -77,7 +79,7 @@ export default function Login() {
             </div>
           </div>
           <div className='flex flex-col gap-8 items-center w-full justify-center '>
-            <PrimaryButton className='bg-main_green w-full' type='submit'>
+            <PrimaryButton  className='bg-main_green w-full' type='submit'>
               Войти
             </PrimaryButton>
             <a href='#'>У меня проблемы со входом</a>

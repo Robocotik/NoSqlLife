@@ -7,7 +7,7 @@ export const Lks: FC<Props> = ({className, ...props}) => {
   return (
     <Image
       src={src}
-      className={`cursor-pointer hover:opacity-80 w-fit max-h-24 h-full duration-200  transition-all ${className}`}
+      className={`cursor-pointer hover:opacity-80 w-fit  h-full duration-200  transition-all ${className}`}
       {...props}
       alt='Lks'
       width={29}

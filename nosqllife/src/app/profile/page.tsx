@@ -26,7 +26,7 @@ export default function Profile() {
             router.push('/');
           }}
         />
-        <Lks className='size-24' />
+        <Lks className='max-h-30 absolute translate-x-[26.5rem]' />
         <Settings />
       </header>
       <div className='flex flex-col justify-center items-center w-full h-full px-inline-main'>

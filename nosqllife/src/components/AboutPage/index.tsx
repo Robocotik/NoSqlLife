@@ -3,11 +3,12 @@
 import type {FC} from 'react';
 import Props from './AboutPage.props';
 import {PageLayout} from '@/layouts/PageLayout';
+import src from '@/assets/img/main_main.jpg';
 export const AboutPage: FC<Props> = ({className}) => {
   return (
-    <PageLayout className={`h-dvh ${className}`}>
+    <PageLayout image={src.src} className={`h-dvh bg-white ${className}`}>
       <div className='w-full h-full flex justify-center items-center'>
-        <p className='text-center text-balance leading-10 text-lg'>
+        <p className='text-center text-balabce leading-10 text-lg text-black font-semibold'>
           Добро пожаловать на наш сервис расчёта утилизации отходов! Этот инструмент разработан
           специально для юридических лиц — АО, ИП, ООО и тп. — которые обязаны соблюдать
           экологические нормы и отчитываться об обращении с отходами. Утилизация отходов — это не
